@@ -1,0 +1,4 @@
+termcolor
+subprocess
+requests
+regex
