@@ -43,8 +43,17 @@ for domain in set_of_domain:
     logging.info(colored(domain, 'yellow'))
 # TODO: Show count
 
-print(colored('Unique subdomains', 'green'))
+print(colored('Resolving subdomains', 'green'))
+#Store bufferover() output in temp.txt as append
+#sys.stdout.close()
 
-# Sorted subs to be printed
+## Resolving Subdomains on 80 and 443 ports
+resDom="cat subs_temp.log|httprobe|tee -a ResolvedSubdomains.txt"
+output=subprocess.run(resDom,shell=True)
+
+
+print(colored('Enumerating Juicy Directories ', 'green'))
+esDom="cat ResolvedSubdomains.txt|gee -suffix 'FUZZ'|ffuf -s -t 10 -mc 200 -w /wordlist.txt"
+output=subprocess.run(resDom,shell=True)
 
 # Enumeration follows
