@@ -52,8 +52,8 @@ resDom="cat subs_temp.log|httprobe|tee -a ResolvedSubdomains.txt"
 output=subprocess.run(resDom,shell=True)
 
 
-print(colored('Enumerating Juicy Directories ', 'green'))
-esDom="cat ResolvedSubdomains.txt|gee -suffix 'FUZZ'|ffuf -s -t 10 -mc 200 -w /wordlist.txt"
-output=subprocess.run(resDom,shell=True)
+#print(colored('Enumerating Juicy Directories ', 'green'))
+#esDom="cat ResolvedSubdomains.txt|gee -suffix 'FUZZ'|ffuf -s -t 10 -mc 200 -w /wordlist.txt"
+#output=subprocess.run(resDom,shell=True)
 
 # Enumeration follows
