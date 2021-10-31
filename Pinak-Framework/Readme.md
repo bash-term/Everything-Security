@@ -15,6 +15,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [BufferOver](https://dns.bufferover.run/)
 * [Httprobe](https://github.com/tomnomnom/httprobe)
 * [Aquatone](https://github.com/michenriksen/aquatone)
+* [ffuf](https://github.com/ffuf/ffuf)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -57,9 +58,10 @@ python3 pinak.py`
     - [x] httprobe
 - [x] Subdomain Visualization
     - [x] Aquatone
-- [] Directory Enumeration
-- [] Nuclei Integration
-- [] Reporting
+- [x] Directory Enumeration
+    - [x] FFUF 
+- [ ] Nuclei Integration
+- [ ] Reporting
 
 See the [open issues](https://github.com/bash-term/Everything-Security/issues) for a full list of proposed features (and known issues).
 
