@@ -26,3 +26,9 @@ iAqua2="unzip Aquatone.zip"
 output=subprocess.run(iAqua2,shell=True)
 iAqua3="cp aquatone /bin/"
 output=subprocess.run(iAqua3,shell=True)
+
+# FFUF binary
+iFFUF="go get -u github.com/ffuf/ffuf"
+output=subprocess.run(iFFUF,shell=True)
+bin2="cp ~/go/bin/ffuf /bin/"
+output=subprocess.run(bin2,shell=True)
