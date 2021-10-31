@@ -49,8 +49,11 @@ print(colored('Resolving subdomains', 'green'))
 
 ## Resolving Subdomains on 80 and 443 ports
 resDom="cat subs_temp.log|httprobe|tee -a ResolvedSubdomains.txt"
-output=subprocess.run(resDom,shell=True)
+out1=subprocess.run(resDom,shell=True)
 
+##Collecting screenshots
+ss="cat ResolvedSubdomains.txt | aquatone -ports large"
+out2=subprocess.run(ss,shell=True)
 
 #print(colored('Enumerating Juicy Directories ', 'green'))
 #esDom="cat ResolvedSubdomains.txt|gee -suffix 'FUZZ'|ffuf -s -t 10 -mc 200 -w /wordlist.txt"

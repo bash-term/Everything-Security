@@ -85,7 +85,8 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Jai Sharma - [@ja1sharma](https://twitter.com/ja1sharma) - ja1sharma.com
+- Jai Sharma - [@ja1sharma](https://twitter.com/ja1sharma) - ja1sharma.com
+- Abhind A - [@Abhind5](https://twitter.com/Abhind5)
 
 Project Link: [Pinak-Framework](https://github.com/bash-term/Everything-Security/tree/master/Pinak-Framework)
 
